@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #0d1f23;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 2rem;
+}
+
+.header nav ul {
+  display: flex;
+}
+
+.header nav ul li {
+  list-style-type: none;
+  padding: 0 1rem;
+}
+
+.header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.header nav ul li a:hover {
+  color: #09e8f4;
+}
+
+.header nav ul li .active {
+  color: #03eefb;
+}
+
+section .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section .main img {
+  width: 200px;
+  height: 250px;
+  border-radius: 50rem;
+}
+
+.hero-heading h1 {
+  text-align: center;
+  color: #09e8f4;
+  text-shadow: 4px 4px 10px #09e8f4;
+  margin: 30px;
+}
+
+.hero-heading {
+  position: relative;
+}
+
+.hero-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  height: 5px;
+  width: 100vw;
+  background-color: #09e8f4;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+main .card {
+  background-color: #0d1f23;
+  margin: 20px;
+  flex-basis: 25%;
+  flex-wrap: wrap;
+  border: 1px solid #09e8f4;
+  border-radius: 10px;
+}
+
+main .card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+main .card .content {
+  padding: 15px;
+}
+
+main .card .content h3 {
+  text-align: center;
+  font-size: 2rem;
+  color: #09e8f4;
+  margin-bottom: 0.8rem;
+}
+
+main .card .content p {
+  text-align: center;
+  padding: 2rem;
+  color: #fff;
+}
+
+main .card .content .btns {
+  display: flex;
+  justify-content: center;
+}
+
+main .card .content .btns button {
+  margin: 0 1rem;
+  padding: 10px 20px;
+  border: 2px solid #09e8f4;
+  border-radius: 10px;
+  background-color: #0d1f23;
+  font-size: 1.2rem;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+main .card .content .btns button:hover {
+  background-color: #09e8f4;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  color: #fff;
+  margin-top: 3rem;
+}
+
+.footer p {
+  margin: 0.5rem 0;
+}
+
+.social-icons {
+  margin-top: 0.5rem;
+}
+
+.social-icons a {
+  margin: 0 0.5rem;
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #1da1f2; /* Twitter color for example */
+}
