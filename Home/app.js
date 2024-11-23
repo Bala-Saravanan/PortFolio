@@ -6,5 +6,6 @@ LIbtn.addEventListener("click", () => {
 });
 
 ResumeBtn.addEventListener("click", () => {
-  window.open("C:\\Users\\DELL\\OneDrive\\Desktop\\Bala_Resume.pdf", "_blank");
+  const path = "Doc/Bala_Resume.pdf";
+  window.open(path, "_blank");
 });
