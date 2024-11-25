@@ -9,3 +9,13 @@ ResumeBtn.addEventListener("click", () => {
   const path = "Doc/Bala_Resume.pdf";
   window.open(path, "_blank");
 });
+
+function show() {
+  const sidebar = document.querySelector(".side-bar");
+  sidebar.style.display = "flex";
+}
+
+function hide() {
+  const hidebar = document.querySelector(".side-bar");
+  hidebar.style.display = "none";
+}

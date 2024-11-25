@@ -20,27 +20,65 @@ body {
   margin: 1rem;
 }
 
-.header nav ul {
+.header .nav ul {
   display: flex;
 }
 
-.header nav ul li {
+.header .nav ul li {
   list-style-type: none;
   padding: 0 1rem;
 }
 
-.header nav ul li a {
+.header .nav ul li a {
   text-decoration: none;
   color: #fff;
   font-size: 1.2rem;
   transition: color 0.3s;
 }
 
-.header nav ul li .active {
+.header .nav ul li .active {
   color: #03eefb;
 }
 
-.header nav ul li a:hover {
+.header .nav ul li a:hover {
+  color: #03eefb;
+}
+
+.header .nav li:last-child {
+  display: none;
+}
+
+.side-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: #212b2d;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: none;
+}
+
+.header .side-bar ul li {
+  list-style-type: none;
+  padding: 1rem 1rem 1rem 2rem;
+}
+
+.header .side-bar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.header .side-bar ul li .active {
+  color: #03eefb;
+}
+
+.header .side-bar ul li a:hover {
   color: #03eefb;
 }
 
@@ -76,6 +114,7 @@ section .main img {
   width: 250px;
   height: 300px;
   border-radius: 50rem;
+  box-shadow: 0 0 18px #00f2ff;
 }
 
 section .btn-container {
@@ -134,5 +173,69 @@ section .btn-container .btn-2:hover {
 }
 
 .social-icons a:hover {
-  color: #1da1f2; /* Twitter color for example */
+  color: #1da1f2;
+}
+
+@media (max-width: 940px) {
+  section .main {
+    flex-direction: column;
+  }
+  section .main .info h3 {
+    text-align: center;
+  }
+  section .main .info p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 870px) {
+  section .main .info {
+    margin-top: 10px;
+    padding-top: 0;
+  }
+  section .main .info h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  section .main .info h3 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  section .main .info p {
+    font-size: 16px;
+    text-align: center;
+  }
+  section .main img {
+    width: 200px;
+    height: auto;
+  }
+  section .btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  section .btn-container button {
+    padding: 1rem;
+    margin: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .nav li {
+    display: none;
+  }
+  .header .nav li:last-child {
+    display: block;
+  }
+  section .btn-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+  }
+  section .btn-container button {
+    padding: 1rem;
+    margin: 1rem;
+  }
 }

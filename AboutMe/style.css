@@ -19,27 +19,65 @@ body {
   padding: 2rem;
 }
 
-.header nav ul {
+.header .nav ul {
   display: flex;
 }
 
-.header nav ul li {
+.header .nav ul li {
   list-style-type: none;
   padding: 0 1rem;
 }
 
-.header nav ul li a {
+.header .nav ul li a {
   text-decoration: none;
   color: #fff;
   font-size: 1.2rem;
   transition: color 0.3s;
 }
 
-.header nav ul li a:hover {
-  color: #09e8f4;
+.header .nav ul li .active {
+  color: #03eefb;
 }
 
-.header nav ul li .active {
+.header .nav ul li a:hover {
+  color: #03eefb;
+}
+
+.header .nav li:last-child {
+  display: none;
+}
+
+.side-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: #212b2d;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: none;
+}
+
+.header .side-bar ul li {
+  list-style-type: none;
+  padding: 1rem 1rem 1rem 2rem;
+}
+
+.header .side-bar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.header .side-bar ul li .active {
+  color: #03eefb;
+}
+
+.header .side-bar ul li a:hover {
   color: #03eefb;
 }
 
@@ -83,6 +121,7 @@ section .main img {
   width: 200px;
   height: 250px;
   border-radius: 50rem;
+  box-shadow: 0 0 18px #00f2ff;
 }
 
 section .btn-container button {
@@ -134,4 +173,16 @@ section .btn-container .btn-1:hover {
 
 .hidden {
   display: none;
+}
+
+@media (max-width: 600px) {
+  .nav li {
+    display: none;
+  }
+  .header .nav li:last-child {
+    display: block;
+  }
+  section .main .info p {
+    text-align: justify;
+  }
 }

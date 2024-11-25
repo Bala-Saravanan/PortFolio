@@ -9,6 +9,7 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: #0d1f23;
+  overflow-x: hidden;
 }
 
 .header {
@@ -54,6 +55,8 @@ section .main img {
   width: 200px;
   height: 250px;
   border-radius: 50rem;
+  border: 5px solid #00f2ff;
+  box-shadow: 0 0 18px #00f2ff;
 }
 
 .hero-heading h1 {
@@ -87,8 +90,8 @@ main .card {
   margin: 20px;
   flex-basis: 25%;
   flex-wrap: wrap;
-  border: 1px solid #09e8f4;
   border-radius: 10px;
+  box-shadow: 0 0 18px #00f2ff;
 }
 
 main .card img {
