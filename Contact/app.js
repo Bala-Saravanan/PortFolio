@@ -22,7 +22,7 @@ form.addEventListener("submit", function (event) {
 
   // Send email via EmailJS
   emailjs
-    .send("API_SERVICE_KEY", "API_TEMPLATE_KEY", {
+    .send("service_57z5vfs", "template_dyvdzkj", {
       from_name: name,
       from_email: email,
       message: message,
