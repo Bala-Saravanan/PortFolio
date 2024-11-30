@@ -60,6 +60,7 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   border: none;
+  z-index: 999;
 }
 
 .header .side-bar ul li {
