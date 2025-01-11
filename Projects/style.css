@@ -94,7 +94,6 @@ section .main img {
   width: 200px;
   height: 250px;
   border-radius: 50rem;
-  border: 5px solid #00f2ff;
   box-shadow: 0 0 18px #00f2ff;
 }
 
@@ -201,7 +200,7 @@ main .card .content .btns button:hover {
 }
 
 .social-icons a:hover {
-  color: #1da1f2; /* Twitter color for example */
+  color: #1da1f2;
 }
 
 @media (max-width: 870px) {
@@ -219,10 +218,18 @@ main .card .content .btns button:hover {
   .nav li {
     display: none;
   }
+  section .main img {
+    height: 200px;
+    width: 150px;
+  }
   .header .nav li:last-child {
     display: block;
   }
   main {
+    flex-direction: column;
+  }
+  .social-icons {
+    display: flex;
     flex-direction: column;
   }
 }

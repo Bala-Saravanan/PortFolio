@@ -227,6 +227,21 @@ section .btn-container .btn-2:hover {
   .header .nav li:last-child {
     display: block;
   }
+  section .main img {
+    height: 200px;
+    width: 150px;
+  }
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+  }
+  section .main .info h1 {
+    font-size: 1.7rem;
+  }
+  section .main .info p {
+    font-size: 16px;
+    text-align: justify;
+  }
   section .btn-container {
     width: 100%;
     display: flex;

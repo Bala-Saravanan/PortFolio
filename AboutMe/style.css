@@ -182,7 +182,19 @@ section .btn-container .btn-1:hover {
   .header .nav li:last-child {
     display: block;
   }
+  .heading {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
   section .main .info p {
     text-align: justify;
+  }
+  section .main img {
+    height: 200px;
+    width: 150px;
+  }
+  .social-icons {
+    display: flex;
+    flex-direction: column;
   }
 }
