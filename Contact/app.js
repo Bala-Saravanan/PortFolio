@@ -30,6 +30,9 @@ form.addEventListener("submit", function (event) {
     .then(() => {
       alert("Email sent successfully!");
     })
+    .then(() => {
+      location.reload();
+    })
     .catch((error) => {
       console.error("Error sending email:", error);
       alert("Failed to send email. Try again later.");
